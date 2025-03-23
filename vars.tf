@@ -1,9 +1,9 @@
 variable "labRole" {
-  default = "arn:aws:iam::172074481079:role/LabRole"
+  default = "arn:aws:iam::791691623793:role/LabRole"
 }
 
 variable "principalArn" {
-  default = "arn:aws:iam::172074481079:role/voclabs"
+  default = "arn:aws:iam::791691623793:role/voclabs"
 }
 
 variable "subnetA" {
