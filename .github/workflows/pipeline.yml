@@ -55,10 +55,6 @@ jobs:
       - name: Validar Terraform
         run: terraform validate
 
-      - name: Import Lambda if it exists
-        if: steps.check_lambda.outputs.lambda_exists == 'true'
-        run: terraform import aws_lambda_function.lambda-autenticacao lambda-autenticacao
-
       - name: Planejar Terraform
         run: terraform plan
 
